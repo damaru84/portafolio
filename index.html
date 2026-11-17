@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio — Tu Nombre</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ─── HEADER ─────────────────────────────────────────── -->
+  <header class="site-header">
+    <div class="header-inner">
+      <span class="logo">Portfolio Daniel Rubio</span>
+      <nav class="nav-links">
+        <a href="#proyectos">Proyectos</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ─── HERO ──────────────────────────────────────────── -->
+  <section class="hero">
+    <div class="hero-tag">✦ disponible para proyectos</div>
+    <div class="hero-tag">✦ Estudiante Tecnicatura Universitaria en Programación</div>
+    <div class="hero-tag">✦ Estudiante Licenciatura en Informática</div>
+
+    <h1 class="hero-title">
+      Portfolio<br />
+      <em>En construcción permanente</em>
+    </h1>
+    <p class="hero-sub">Desarrollador · Diseñador · Creador de experiencias digitales</p>
+    <div class="hero-scroll-hint">↓ mis proyectos</div>
+  </section>
+
+  <!-- ─── FILTROS ────────────────────────────────────────── -->
+  <section class="projects-section" id="proyectos">
+    <div class="filter-bar">
+      <button class="filter-btn active" data-filter="all">Todos</button>
+      <button class="filter-btn" data-filter="web">Web</button>
+      <button class="filter-btn" data-filter="mobile">Mobile</button>
+      <button class="filter-btn" data-filter="data">Data</button>
+      <button class="filter-btn" data-filter="design">Diseño</button>
+    </div>
+
+    <!-- ─── GRID DE TARJETAS ───────────────────────────── -->
+    <div class="cards-grid" id="cards-grid">
+
+      <!-- TARJETA 1 -->
+      <article class="card" data-cat="web">
+        <div class="card-banner banner--purple">
+          <img class="card-emoji" src="icons/react.png" alt="react.js" />
+          <img class="card-emoji" src="icons/html.png" alt="html" />
+          <img class="card-emoji" src="icons/js.png" alt="js" />
+          <span class="card-number">01</span>
+        </div>
+        <div class="card-body">
+          <div class="card-tags">
+            <span class="tag tag--amber">html</span>
+            <span class="tag tag--purple">React</span>
+            <span class="tag tag--purple">Next.js</span>
+          </div>
+          <h2 class="card-title">Tienda de celulares online</h2>
+          <p class="card-desc">E-commerce completo con carrito, pasarela de pagos y panel de administración.</p>
+        </div>
+        <div class="card-footer">
+          <!-- Reemplazá href="#" con tus links reales -->
+          <a class="btn btn--ghost" href= https://github.com/damaru84/RetroCelus.git target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            GitHub
+          </a>
+          <a class="btn btn--filled" href=https://retro-celus.vercel.app target="_blank" rel="noopener">
+            Demo →
+          </a>
+        </div>
+      </article>
+
+      <!-- TARJETA 2 -->
+      <article class="card" data-cat="mobile">
+        <div class="card-banner banner--pink">
+         
+          <img class="card-emoji" src="icons/node.png" alt="node.js" />
+          <span class="card-number">02</span>
+        </div>
+        <div class="card-body">
+          <div class="card-tags">
+            <span class="tag tag--green">Node.js</span>
+            <span class="tag tag--amber">Firebase</span>
+          </div>
+          <h2 class="card-title">App de hábitos</h2>
+          <p class="card-desc">Seguimiento de rutinas diarias con recordatorios, rachas y estadísticas.</p>
+        </div>
+        <div class="card-footer">
+          <a class="btn btn--ghost" href= https://github.com/damaru84/node_pe.git target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            GitHub
+          </a>
+          <a class="btn btn--filled" href="#" target="_blank" rel="noopener">
+            Demo →
+          </a>
+        </div>
+      </article>
+
+      <!-- TARJETA 3 -->
+      <article class="card" data-cat="data">
+        <div class="card-banner banner--green">
+          <img class="card-emoji" src="icons/python.png" alt="python" />
+          <img class="card-emoji" src="icons/pandas.png" alt="pandas" />
+          <img class="card-emoji" src="icons/sheets.png" alt="sheets" />
+          <span class="card-number">03</span>
+        </div>
+        <div class="card-body">
+          <div class="card-tags">
+            <span class="tag tag--green">Python</span>
+            <span class="tag tag--teal">Pandas</span>
+            <span class="tag tag--teal">Sheet</span>
+          </div>
+          <h2 class="card-title">Dashboard balance ong Potenciar Solidario</h2>
+          <p class="card-desc">Visualizaciones interactivas de datos de balances de ONG con filtros y exportación.</p>
+        </div>
+        <div class="card-footer">
+
+
+          </a>
+          <a class="btn btn--filled" href=https://docs.google.com/spreadsheets/d/e/2PACX-1vT3YsH2-OzQQakZFGbv3op6ROnRzDVwK-0ZnbJMdVTby9ImhevPkMivRWScXCZ37Kgbf6jgO55OaACi/pubhtml?gid=1790326371&single=true target="_blank" rel="noopener">
+            Demo →
+          </a>
+        </div>
+      </article>
+
+      <!-- TARJETA 4 -->
+      <article class="card" data-cat="design">
+        <div class="card-banner banner--coral">
+          <img class="card-emoji" src="icons/java.png" alt="java.js" />
+          <img class="card-emoji" src="icons/spring.png" alt="spring" />
+          <span class="card-number">04</span>
+        </div>
+        <div class="card-body">
+          <div class="card-tags">
+            <span class="tag tag--coral">Java</span>
+            <span class="tag tag--teal">Springboot</span>
+          </div>
+          <h2 class="card-title">Aplicacion Java</h2>
+          <p class="card-desc">Aplicacion en Java para registrar, gestionar y mostrar productos, y crear pedidos con multiples productos</p>
+        </div>
+        <div class="card-footer">
+          <a class="btn btn--ghost" href=https://github.com/damaru84/demo-TalentoTech/tree/main target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            GitHub
+            
+          </a>
+         
+          </a>
+        </div>
+      </article>
+
+      <!-- TARJETA 5 -->
+      <article class="card" data-cat="web">
+        <div class="card-banner banner--amber">
+          <span class="card-emoji">🤖</span>
+          <span class="card-number">05</span>
+        </div>
+        <div class="card-body">
+          <div class="card-tags">
+            <span class="tag tag--amber">OpenAI</span>
+            <span class="tag tag--purple">Next.js</span>
+          </div>
+          <h2 class="card-title">Chatbot con IA</h2>
+          <p class="card-desc">Asistente conversacional integrado con GPT-4 y memoria de contexto.</p>
+        </div>
+        <div class="card-footer">
+          <a class="btn btn--ghost" href="#" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            GitHub
+          </a>
+          <a class="btn btn--filled" href="#" target="_blank" rel="noopener">
+            Demo →
+          </a>
+        </div>
+      </article>
+
+      <!-- TARJETA 6 -->
+      <article class="card" data-cat="mobile">
+        <div class="card-banner banner--teal">
+          <span class="card-emoji">🗺️</span>
+          <span class="card-number">06</span>
+        </div>
+        <div class="card-body">
+          <div class="card-tags">
+            <span class="tag tag--teal">React Native</span>
+            <span class="tag tag--blue">Maps API</span>
+            <span class="tag tag--blue">Node.js</span>
+            <span class="tag tag--pink">Flutter</span>
+            <span class="tag tag--amber">Firebase</span>
+
+
+
+
+
+          </div>
+          <h2 class="card-title">App de turismo local</h2>
+          <p class="card-desc">Descubrí lugares cercanos con rutas, reseñas y modo offline.</p>
+        </div>
+        <div class="card-footer">
+          <a class="btn btn--ghost" href="#" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            GitHub
+          </a>
+          <a class="btn btn--filled" href="#" target="_blank" rel="noopener">
+            Demo →
+          </a>
+        </div>
+      </article>
+
+    </div><!-- /cards-grid -->
+  </section>
+
+  <!-- ─── CONTACTO ───────────────────────────────────────── -->
+  <section class="contact-section" id="contacto">
+    <div class="contact-inner">
+      <p class="contact-eyebrow">¿Trabajamos juntos?</p>
+      <h2 class="contact-title">Hablemos</h2>
+      <div class="contact-links">
+        <!-- Reemplazá con tus links reales -->
+        <a class="contact-link" href= info.danielrubio@gmail.com>info.danielrubio@gmail.com</a>
+        <a class="contact-link" href= https://github.com/damaru84 target="_blank" rel="noopener">GitHub</a>
+        <a class="contact-link" href= https://www.linkedin.com/in/danielmartinrubio/ target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <span>Hecho y actualizado por @damaru84 · <span id="year"></span></span>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
